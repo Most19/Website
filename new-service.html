@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new-service.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Service</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="index.html"><img src="../LogoNegatif-transparent.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li> <!-- Page d'accueil -->
+                <li><a href="notreEntreprise.html">Notre Entreprise</a></li> <!-- Page Notre Entreprise -->
+                <li><a href="new-service.html">Services</a></li> <!-- Page Services -->
+                <li><a href="../telemaintenance.exe" download>Telemaintenance</a></li> <!-- Page Pour Telecharger la telemaintenance -->
+                <li><a href="contact.html">Contact</a></li> <!-- Page de contact -->
+            </ul>
+        </div>
+
+        <div class="container"><!--Conteneur des 5 bouttons pour les 5 pilliers-->
+            <h1>LES CINQ PILLIERS DE NOTRE ENTREPRISE</h1>
+            <h5>Cliquez Ci-Dessous</h5>
+      
+            <button class="button" onclick="toggleSection(1)">Auditer</button>
+            <button class="button" onclick="toggleSection(2)">Conseiller</button>
+            <button class="button" onclick="toggleSection(3)">Evoluer</button>
+            <button class="button" onclick="toggleSection(4)">Documenter</button>
+            <button class="button" onclick="toggleSection(5)">Maintenir</button>
+      
+            <div id="section1" class="box">
+                <p>Proposer un état des lieux de votre système informatique via la réalisation d’un audit de cybersécurité.</p>  
+                <p>Basé sur les préconisations de L’ANSII, celui-ci s’adresse aux TPE-PME-PMI.</p>
+            </div>
+            <div id="section2" class="box">
+                <p>Vous accompagner dans l’évolution de votre système</p>  
+                <p>via des prestations de service ou de vente de matériel.</p>
+            </div>
+            <div id="section3" class="box">
+                <p>Intervenir dans la réalisation des conseils, mettre en conformité votre système.</p>
+                <p>Veiller à l’adéquation de vos besoins et vos ressources.</p>
+            </div>
+            <div id="section4" class="box">
+                <p>Analyser la cartographie de votre système.</p>
+                <p>Mettre en place des fiches de procédures.</p> 
+                <p>Réaliser une carte d’identité de votre infrastructure.</p>
+            </div>
+            <div id="section5" class="box">
+                <p>Suivre et maintenir en état opérationnel votre solution via un contrat de maintenance.</p>
+                <p>Planifier des interventions tant en présentiel qu’en télémaintenance.</p>
+                <p>Obtenir la garantie d’une intervention dans les temps et un rétablissement à la mesure de vos exigences.</p>
+                <p>Vous permettre de donner la priorité à votre activité sans vous soucier de l’informatique.</p>
+            </div>
+        </div>
+        <script src="new-service.js"></script>
+    </div>
+
+    <footer class="footer1"> <!-- Le footer ou le bendeau en bas de la page -->
+        <div class="footer-content">
+            
+            <div class="footer-links"> <!-- Les differentes lien vers les autres pages -->
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="notreEntreprise.html">Notre Entreprise</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="../telemaintenance.exe" download>Telemaintenance</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links2"> <!-- Les lien cliquable pour envoyer un mail ou appeler le n° de telephone -->
+                
+                
+                <ul>
+                    <li><a href="mailto:contact@serviceinfopro.fr">contact@serviceinfopro.fr</a></li>
+                    <li><a>+33 07 49 76 77 24</a></li>
+                </ul>
+            </div>
+                
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../it_matos.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 250px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ff9113;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.title {
+    position: relative;
+    height: 200px;
+    padding: 50px;
+    background-color: rgba(48, 48, 48, 0.4);
+    backdrop-filter: blur(8px) saturate(180%);
+    background: transparent;
+}
+.title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px) saturate(180%);
+    background-color: rgba(48, 48, 48, 0.4);
+    z-index: -1;
+}
+.title h1 {
+    text-align: center;
+    color: #fff;
+    transform: translateY(70px);
+    font-size: 50px;
+}
+.title h1 span{
+    color: #ff9113;
+}
+
+.paragraph1{
+    position: relative;
+    height: 350px;
+    padding: 50px;
+    margin-top: 50px;
+    transform: translateY(-300px);
+    background-color: rgba(48, 48, 48, 0.4);
+    backdrop-filter: blur(8px) saturate(180%);
+    background: transparent;
+}
+.paragraph1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px) saturate(180%);
+    background-color: rgba(48, 48, 48, 0.4);
+    z-index: -1;
+}
+.paragraph1 img{
+    width: 550px;
+    transform: translateY(-50px);
+    transform: translateX(1000px);
+}
+.paragraph1 p{
+    color: #fff;
+    font-size: 20px;
+    transform: translateY(-260px);
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
